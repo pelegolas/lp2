@@ -1,0 +1,1 @@
+O exercicio numero 3 apenas apresentava os valores resultantes em valores inteiros, já os exercicios 4 e 5 apresentava os valores resultates das operações em casas decimais;
