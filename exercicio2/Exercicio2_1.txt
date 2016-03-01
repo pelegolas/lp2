@@ -1,0 +1,7 @@
+Tipo Abstrato de Dado (TAD) é uma especificação de um conjunto de dados e operações que podem ser executadas sobre esses dados.
+
+Classe é uma estrutura que abstrai um conjunto de objetos com características similares.
+
+Objeto é uma referência a um local da memória que possui um valor. Um objeto passa a existir a partir de um "molde" (classe); a classe define o comportamento do objeto, usando atributos (propriedades) e métodos (ações).
+
+Mensagem é uma espécie de 'mensagem fictícia' que ocorre dentro do sistema para exibir diretamente uma classe com finalidade de usá-la ou simplesmente demonstrar os estados da classe.
