@@ -1,1 +1,1 @@
-Quando a palavra chave new é utilizada em um aplicativo, um novo objeto é instanciado dentro da classe.
+Quando a palavra chave new é utilizada em um algoritmo, um novo objeto é criado dentro da classe na qual se foi escolhida.
