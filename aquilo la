@@ -1,0 +1,31 @@
+
+    class ConnectionProjeto extends AsyncTask<Object, Void,  ArrayList<ProjetoActivity>> {
+
+
+        private RestFulClient cliente = new RestFulClient();
+
+
+        /** Este metodo eh executado por um Thread que eh controlado pela classe
+         *  Quando esta Thread finaliza a execucao, automaticamente o metodo
+         *  onPostExecute eh executado
+         */
+        @Override
+        protected ArrayList<ProjetoActivity> doInBackground(Object ... args) {
+
+
+            //salva e em seguida lista os dados registrados
+            ArrayList<ProjetoActivity> list = new ArrayList<ProjetoActivity>();
+
+            cliente.recuperar(ProjetoActivity);
+            String jsonProjetos = cliente.recuperar("http://localhost:8080/jpa-springdata/rest/projeto");
+
+            list = ProjetoActivity.fromArrayJson(jsonProjetos);
+
+            return list;
+
+        }
+
+        /** Este metodo eh automaticamente executado quando doInBackground() finalizar
+         * Neste momento ele irah renderizar o listview com os dados recuperados no webservice
+         */
+        protected void onPostExecute(ArrayList<ProjetoActivity> result) {
